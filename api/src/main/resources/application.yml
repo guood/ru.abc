@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/apidb
+    username: postgres
+    password: 111
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
+api:
+  price:
+    delta: 0.7
+  clients:
+    priceService:
+      url: http://localhost:8081/
+logging:
+  level:
+    ru:
+      abc: DEBUG

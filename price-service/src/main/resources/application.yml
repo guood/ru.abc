@@ -1,0 +1,11 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost/pricedb
+server:
+  port: 8081
+
+logging:
+  level:
+    ru:
+      abc: DEBUG

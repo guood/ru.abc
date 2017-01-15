@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:hsqldb:mem:apidb
+    username: SA
+    password:
+    driver-class-name: org.hsqldb.jdbcDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
+api:
+  price:
+    delta: 0.7
+  clients:
+    priceService:
+      url: http://localhost:8081/
+logging:
+  level:
+    ru:
+      abc: DEBUG

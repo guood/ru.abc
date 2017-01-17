@@ -32,15 +32,4 @@ public class BaseController {
         logger.error("Error: ", ex);
         return new Response(Response.SYSTEM_ERROR_CODE, ex.getMessage() == null ? "System error" : ex.getMessage());
     }
-
-    protected void logStartMethod(String methodName, Object... params) {
-        Logger logger = LoggerFactory.getLogger(this.getClass());
-        logger.info("{}.{}({}) started", this.getClass().getName(), methodName, params);
-    }
-
-    protected void logEndMethod(String methodName, Object result) {
-        Logger logger = LoggerFactory.getLogger(this.getClass());
-        logger.info("Return {} from {}.{}) success", result, this.getClass().getName(), methodName);
-
-    }
 }

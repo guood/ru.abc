@@ -8,9 +8,9 @@ import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.springframework.test.util.ReflectionTestUtils;
 import ru.abc.api.clients.PriceServiceClient;
-import ru.abc.api.controllers.ApiController;
 import ru.abc.api.domain.Product;
 import ru.abc.api.repositories.ProductRepository;
+import ru.abc.api.services.ApiService;
 import ru.abc.common.dto.Response;
 import ru.abc.common.dto.api.ProductPriceRequest;
 import ru.abc.common.dto.price.AvgPriceRequest;
@@ -28,7 +28,7 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-public class ApiControllerTest {
+public class ApiServiceTest {
     @Mock
     private PriceServiceClient priceServiceClient;
     @Mock
@@ -36,7 +36,7 @@ public class ApiControllerTest {
     @Mock
     private Messages messages;
     @InjectMocks
-    private ApiController apiController;
+    private ApiService apiService;
 
     @Before
     public void init() {
@@ -47,13 +47,13 @@ public class ApiControllerTest {
 
         when(priceServiceClient.avg(any(AvgPriceRequest.class))).thenReturn(new AvgPriceResponse(new BigDecimal(110)));
         when(priceServiceClient.write(any(WritePriceRequest.class))).thenReturn(new Response());
-        ReflectionTestUtils.setField(apiController, "priceDelta", new BigDecimal(0.7));
+        ReflectionTestUtils.setField(apiService, "priceDelta", new BigDecimal(0.7));
     }
 
     @Test
     public void test() throws Exception {
         ProductPriceRequest productPriceRequest = new ProductPriceRequest("Product1", new BigDecimal(100.5));
-        Response response = apiController.api(productPriceRequest);
+        Response response = apiService.api(productPriceRequest);
 
         assertThat(response.getErrorCode(), is("0"));
         assertThat(response.getErrorMessage(), is(""));

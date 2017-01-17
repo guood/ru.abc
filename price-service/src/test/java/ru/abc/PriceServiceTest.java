@@ -11,9 +11,9 @@ import ru.abc.common.dto.price.AvgPriceRequest;
 import ru.abc.common.dto.price.AvgPriceResponse;
 import ru.abc.common.dto.price.WritePriceRequest;
 import ru.abc.common.messages.Messages;
-import ru.abc.price.controllers.PriceController;
 import ru.abc.price.domain.Price;
 import ru.abc.price.repositories.PriceRepository;
+import ru.abc.price.services.PriceService;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -27,14 +27,14 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-public class PriceControllerTest {
+public class PriceServiceTest {
 
     @Mock
     private PriceRepository priceRepository;
     @Mock
     private Messages messages;
     @InjectMocks
-    private PriceController priceController;
+    private PriceService priceService;
 
     @Before
     public void init() {
@@ -48,7 +48,7 @@ public class PriceControllerTest {
     @Test
     public void testAvg() {
         AvgPriceRequest avgPriceRequest = new AvgPriceRequest(1);
-        AvgPriceResponse avgPriceResponse = priceController.avg(avgPriceRequest);
+        AvgPriceResponse avgPriceResponse = priceService.avg(avgPriceRequest);
 
         assertThat(avgPriceResponse.getErrorCode(), is("0"));
         assertThat(avgPriceResponse.getErrorMessage(), is(""));
@@ -58,7 +58,7 @@ public class PriceControllerTest {
     @Test
     public void testPricesNotFound() {
         AvgPriceRequest avgPriceRequest = new AvgPriceRequest(2);
-        AvgPriceResponse avgPriceResponse = priceController.avg(avgPriceRequest);
+        AvgPriceResponse avgPriceResponse = priceService.avg(avgPriceRequest);
 
         assertThat(avgPriceResponse.getErrorCode(), is("2"));
         assertThat(avgPriceResponse.getErrorMessage(), is("Price not found"));
@@ -67,7 +67,7 @@ public class PriceControllerTest {
     @Test
     public void testWrite() {
         WritePriceRequest writePriceRequest = new WritePriceRequest(1, new BigDecimal(105));
-        Response response = priceController.write(writePriceRequest);
+        Response response = priceService.write(writePriceRequest);
 
         assertThat(response.getErrorCode(), is("0"));
         assertThat(response.getErrorMessage(), is(""));

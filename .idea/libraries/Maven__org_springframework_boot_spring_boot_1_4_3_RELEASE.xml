@@ -1,0 +1,56 @@
+<component name="libraryTable">
+  <library name="Maven: org.springframework.boot:spring-boot:1.4.3.RELEASE">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.4.3.RELEASE/spring-boot-1.4.3.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.4.3.RELEASE/spring-boot-1.4.3.RELEASE-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.4.3.RELEASE/spring-boot-1.4.3.RELEASE-sources.jar!/" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/gradle/jdiff" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-aop/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-aop/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-aspects/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-aspects/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-beans-groovy/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-beans/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-beans/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-context-indexer/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-context-indexer/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-context-support/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-context-support/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-context/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-context/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-core/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-core/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-expression/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-expression/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-instrument/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-jdbc/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-jdbc/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-jms/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-jms/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-messaging/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-messaging/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-orm/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-orm/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-oxm/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-oxm/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-test/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-test/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-tx/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-tx/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-web/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-web/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-webflux/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-webflux/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-webmvc/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-webmvc/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-websocket/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/spring-websocket/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../spring/spring-framework/src/test/java" />
+    </SOURCES>
+  </library>
+</component>

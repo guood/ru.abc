@@ -15,7 +15,7 @@ public class ApiController extends BaseController {
     @Autowired
     private ApiService apiService;
 
-    @RequestMapping(value = "/api", produces = "application/json")
+    @RequestMapping(value = "/br1/api", produces = "application/json")
     public Response api(@Valid @RequestBody ProductPriceRequest productPrice) throws ApplicationException {
         return apiService.api(productPrice);
     }
